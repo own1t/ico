@@ -8,6 +8,7 @@ import LoadingContainer from "./LoadingContainer";
 import Header from "./components/Header";
 import ICOInfo from "./components/ICOInfo";
 import Investing from "./components/Investing";
+import Whitelist from "./components/Whitelist";
 
 const drizzle = new Drizzle(drizzleOptions);
 const { DrizzleProvider } = drizzleReactHooks;
@@ -33,7 +34,7 @@ const App = () => {
                     </div>
                   </Route>
                   <Route path="/whitelist" exact>
-                    Whitelist
+                    <Whitelist />
                   </Route>
                   <Route path="/admin" exact>
                     <h1 className="card-title header mt-5">Admin</h1>
