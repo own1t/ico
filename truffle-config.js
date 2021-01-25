@@ -13,7 +13,7 @@ module.exports = {
       network_id: "*",
       host: "127.0.0.1",
     },
-    rinkeby_infura: {
+    rinkeby: {
       provider: function () {
         return new HDWalletProvider(
           process.env.PRIVATE_KEY,
