@@ -7,6 +7,7 @@ import drizzleOptions from "./drizzleOptions";
 import LoadingContainer from "./LoadingContainer";
 import Header from "./components/Header";
 import ICOInfo from "./components/ICOInfo";
+import Investing from "./components/Investing";
 
 const drizzle = new Drizzle(drizzleOptions);
 const { DrizzleProvider } = drizzleReactHooks;
@@ -27,7 +28,9 @@ const App = () => {
                     <div className="col card mx-1">
                       <ICOInfo />
                     </div>
-                    <div className="col card mx-1">Investing</div>
+                    <div className="col card mx-1">
+                      <Investing />
+                    </div>
                   </Route>
                   <Route path="/whitelist" exact>
                     Whitelist
