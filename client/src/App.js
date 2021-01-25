@@ -9,6 +9,9 @@ import Header from "./components/Header";
 import ICOInfo from "./components/ICOInfo";
 import Investing from "./components/Investing";
 import Whitelist from "./components/Whitelist";
+import Admin from "./components/Admin";
+
+import "./App.css";
 
 const drizzle = new Drizzle(drizzleOptions);
 const { DrizzleProvider } = drizzleReactHooks;
@@ -38,6 +41,7 @@ const App = () => {
                   </Route>
                   <Route path="/admin" exact>
                     <h1 className="card-title header mt-5">Admin</h1>
+                    <Admin />
                   </Route>
                 </div>
               </Switch>
